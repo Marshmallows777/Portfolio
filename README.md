@@ -1,2 +1,2 @@
 # Portfolio </br>
-https://adarshs.netlify.app/
+https://adarshs-portfolio.netlify.app/
