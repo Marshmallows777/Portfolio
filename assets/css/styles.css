@@ -19,30 +19,18 @@
     --z-fixed: 100;
 }
 
-
-/* width */
-
 ::-webkit-scrollbar {
     width: 8px;
 }
-
-
-/* Track */
 
  ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
-
-/* Handle */
-
  ::-webkit-scrollbar-thumb {
     background: #7c7272;
     border-radius: 10px;
 }
-
-
-/* Handle on hover */
 
  ::-webkit-scrollbar-thumb:hover {
     background: #555;
@@ -127,15 +115,12 @@ img {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    /* background-color: #fff; */
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
-
-/* 
 nav {
     backdrop-filter: blur(15px);
-} */
+}
 
 .nav {
     height: var(--header-height);
@@ -318,7 +303,7 @@ nav {
     padding: .5rem 1rem;
     margin-bottom: var(--mb-4);
     border-radius: .5rem;
-    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    box-shadow: 0px 4px 25px rgba(243, 239, 239, 0.500);
 }
 
 .skills__icon {
@@ -455,7 +440,6 @@ nav {
 }
 
 .footer {
-    /* background-color: var(--second-color); */
     border-top: 2px solid white;
     background-color: black;
     color: #fff;
@@ -501,27 +485,13 @@ nav {
     .home__img {
         width: 200px;
     }
-}
-
-@media screen and (min-width: 968px) {
-     :root {
-        --big-font-size: 3.5rem;
-        --h2-font-size: 2rem;
-        --normal-font-size: 1rem;
-        --smaller-font-size: .875rem;
+    .nav__list {
+        display: flex;
+        padding-top: 0;
     }
-}
-
-@media screen and (max-width: 767px) {
-    .nav__menu {
-        position: fixed;
-        top: var(--header-height);
-        right: -100%;
-        width: 80%;
-        height: 100%;
-        padding: 2rem;
-        background-color: var(--second-color);
-        transition: .5s;
+    .nav__item {
+        margin-left: var(--mb-6);
+        margin-bottom: 0;
     }
 }
 
@@ -564,6 +534,19 @@ nav {
     }
     .contact__container {
         justify-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav__menu {
+        position: fixed;
+        top: var(--header-height);
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--second-color);
+        transition: .5s;
     }
 }
 
@@ -621,6 +604,15 @@ nav {
     .work__container {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 968px) {
+     :root {
+        --big-font-size: 3.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: .875rem;
     }
 }
 
